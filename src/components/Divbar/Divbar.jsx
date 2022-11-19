@@ -7,7 +7,9 @@ const Divbar = (props) => {
   return (
     <div>
       <ProfileInfo />
-      <Myposts postData={props.post.postData} />
+      <Myposts postData={props.postPage.postData}
+        newPostText={props.postPage.newPostText}
+        dispatch={props.dispatch} />
     </div>
   )
 }
